@@ -35,3 +35,14 @@ Ran tests/file_framing_test.py on CentOS.
 Verified split binary payload forwarding without changes, separate processing of LIST immediately after file bytes, and an identical server copy.
 An upload to a nonexistent room returned ERR 003, and the following LIST command was processed correctly.
 Result: All four checks PASS.
+
+### TCP command framing — 2026-10-07
+Ran tests/tcp_framing_test.py on CentOS.
+Verified split REGISTER, combined LIST and ROOMS, preservation of an incomplete next command, and QUIT followed by connection closure.
+Result: All four checks PASS.
+
+### File framing — 2026-10-07
+Ran tests/file_framing_test.py on CentOS.
+Verified split binary payload forwarding without changes, separate processing of LIST immediately after file bytes, and an identical server copy.
+An upload to a nonexistent room returned ERR 003, and the following LIST command was processed correctly.
+Result: All four checks PASS.
