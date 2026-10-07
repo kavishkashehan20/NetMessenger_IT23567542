@@ -57,3 +57,7 @@ dkms.conf
 # NetMessenger compiled programs
 /server_7542
 /client_7542
+
+# Runtime file-transfer data
+/storage/
+/received/
